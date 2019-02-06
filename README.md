@@ -48,7 +48,7 @@ Let us know your thoughts below. And good luck with development!
 
 ## Demo
 
-- [Start page](https://demos.creative-tim.com/material-kit-pro-react-native)
+- [Start page](https://demos.creative-tim.com/material-kit-react-native)
 - [How to install our free demo](https://demos.creative-tim.com/material-kit-react-native/docs/#/install)
 
 
@@ -65,7 +65,7 @@ The documentation for the Material Kit React Native is hosted at our [website](h
 Within the download you'll find the following directories and files:
 
 ```
-material-kit-pro-react-native/
+material-kit-react-native/
 ├── App.js
 ├── README.md
 ├── app.json
