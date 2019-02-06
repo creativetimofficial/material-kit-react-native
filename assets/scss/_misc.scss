@@ -1,0 +1,84 @@
+body{
+    background-color: #E5E5E5;
+    color: $black-color;
+}
+
+legend {
+  border-bottom: 0;
+}
+
+.serif-font{
+    font-family: $font-family-serif;
+}
+
+// Prevent highlight on mobile
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  &:focus {
+    outline: 0;
+  }
+}
+
+a{
+  color: $link-color;
+  &:hover,
+  &:focus{
+      color: darken($link-color, 5%);
+      text-decoration: none;
+  }
+
+  &.text-info{
+      &:hover, &:focus{
+          color: darken($brand-info, 5%);
+      }
+  }
+
+  & .material-icons {
+    vertical-align: middle;
+  }
+}
+
+.main{
+    background: #FFFFFF;
+    position: relative;
+    z-index: 3;
+
+}
+
+.form-check,
+label{
+    font-size: 14px;
+    line-height: 1.42857;
+    color: $checkboxes-text-color;
+    font-weight: 400;
+}
+
+.main-raised{
+    margin: -60px 30px 0px;
+    border-radius: $border-radius-base * 2;
+    @include shadow-16dp();
+}
+
+// documentation page-header
+
+.offline-doc .page-header{
+    height: 100vh !important;
+}
+
+/*           Animations              */
+.animation-transition-general{
+    @include transitions($general-transition-time, $transition-linear);
+}
+
+.animation-transition-slow{
+    @include transitions($slow-transition-time, $transition-linear);
+}
+
+.animation-transition-fast,
+.navbar,
+.bootstrap-tagsinput .tag,
+.bootstrap-tagsinput [data-role="remove"],
+.card-collapse .card-header a i{
+    @include transitions($fast-transition-time, $transition-ease);
+}

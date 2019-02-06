@@ -1,0 +1,76 @@
+/*! =========================================================
+ *
+ * Material Kit PRO - v2.0.0 (Bootstrap 4 Edition)
+ *
+ * =========================================================
+ *
+ * Product Page: https://www.creative-tim.com/product/material-kit-pro
+ * Available with purchase of license from https://www.creative-tim.com/product/material-kit-pro
+ * Copyright 2017 Creative Tim (https://www.creative-tim.com)
+ * License Creative Tim (https://www.creative-tim.com/license)
+ *
+ * ========================================================= */
+
+@import "variables";
+@import "mixins";
+@import "core-bootstrap";
+
+@import "reboot";
+
+//Plugins
+@import "plugins/plugin-bootstrap-select";
+@import "plugins/plugin-datetime-picker";
+@import "plugins/plugin-nouislider";
+@import "plugins/plugin-flexisel";
+@import "plugins/plugin-tagsinput";
+
+@import "layout";
+@import "buttons";
+@import "misc";
+@import "checkboxes";
+@import "custom-forms";
+@import "switches";
+@import "radios";
+@import "carousel";
+@import "forms";
+@import "input-group";
+@import "list-group";
+@import "tables";
+@import "nav";
+@import "images";
+@import "fileupload";
+@import "navbar";
+@import "alerts";
+@import "progress";
+@import "badges";
+@import "pagination";
+@import "pills";
+@import "info-areas";
+@import "type";
+@import "tabs";
+@import "tooltip";
+@import "popover";
+@import "cards";
+@import "media";
+@import "modal";
+@import "dropdown";
+@import "drawer";
+@import "sections";
+@import "togglebutton";
+@import "ripples";
+
+// Sections and Example pages
+@import "example-pages";
+@import "sections/headers";
+@import "sections/footers";
+@import "sections/social-subscribe-lines";
+@import "sections/features";
+@import "sections/team";
+@import "sections/pricing";
+@import "sections/blogs";
+@import "sections/projects";
+@import "sections/testimonials";
+@import "sections/contactus";
+
+@import "extensions";
+@import "responsive";

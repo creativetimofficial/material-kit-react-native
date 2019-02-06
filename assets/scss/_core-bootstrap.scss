@@ -1,0 +1,66 @@
+// FIXME: only necessary because there isn't an underscored file - see https://github.com/twbs/bootstrap/issues/18350
+//@import "../bower_components/bootstrap/scss/
+//@import "../../bootstrap/scss/
+
+// Core variables and mixins
+@import "core-bootstrap/scss/functions";
+@import "core-bootstrap/scss/variables";
+@import "core-bootstrap/scss/mixins";
+
+// #853 start - https://github.com/twbs/bootstrap/pull/18976/files
+// hack
+@mixin pull-left {
+  float: left !important;
+  @if $enable-flex {
+    margin-right: auto;
+  }
+}
+@mixin pull-right {
+  float: right !important;
+  @if $enable-flex {
+    margin-left: auto;
+  }
+}
+// #853 end - https://github.com/twbs/bootstrap/pull/18976/files
+
+// Reset and dependencies
+@import "core-bootstrap/scss/reboot";
+@import "core-bootstrap/scss/print";
+
+// Core CSS
+@import "core-bootstrap/scss/reboot";
+@import "core-bootstrap/scss/type";
+@import "core-bootstrap/scss/images";
+@import "core-bootstrap/scss/code";
+@import "core-bootstrap/scss/grid";
+@import "core-bootstrap/scss/tables";
+@import "core-bootstrap/scss/forms";
+@import "core-bootstrap/scss/buttons";
+@import "core-bootstrap/scss/transitions";
+
+// Components
+@import "core-bootstrap/scss/dropdown";
+@import "core-bootstrap/scss/button-group";
+@import "core-bootstrap/scss/input-group";
+@import "core-bootstrap/scss/custom-forms";
+@import "core-bootstrap/scss/nav";
+@import "core-bootstrap/scss/navbar";
+@import "core-bootstrap/scss/card";
+@import "core-bootstrap/scss/breadcrumb";
+@import "core-bootstrap/scss/pagination";
+@import "core-bootstrap/scss/jumbotron";
+@import "core-bootstrap/scss/alert";
+@import "core-bootstrap/scss/progress";
+@import "core-bootstrap/scss/media";
+@import "core-bootstrap/scss/list-group";
+@import "core-bootstrap/scss/close";
+@import "core-bootstrap/scss/badge";
+
+// Components w/ JavaScript
+@import "core-bootstrap/scss/modal";
+@import "core-bootstrap/scss/tooltip";
+@import "core-bootstrap/scss/popover";
+@import "core-bootstrap/scss/carousel";
+
+// Utility classes
+@import "core-bootstrap/scss/utilities";
