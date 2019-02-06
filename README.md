@@ -49,7 +49,7 @@ Let us know your thoughts below. And good luck with development!
 ## Demo
 
 - [Start page](https://demos.creative-tim.com/material-kit-pro-react-native)
-
+- [How to install our free demo](https://demos.creative-tim.com/material-kit-react-native/docs/#/install)
 
 
 ## Quick start
@@ -119,6 +119,7 @@ At present, we officially aim to support the last two versions of the following 
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-kit-react-native/issues)
 - [Material Kit](https://www.creative-tim.com/product/material-kit?ref=mkprn-readme) - For Front End Development
+- [Buy our PRO version](https://www.creative-tim.com/product/material-kit-pro-react-native)
 
 ## Reporting Issues
 
@@ -139,7 +140,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 - Copyright 2018 Creative Tim (https://www.creative-tim.com/)
 
-- Creative Tim [license](https://www.creative-tim.com/license)
+- Licensed under MIT (https://github.com/creativetimofficial/material-kit-react-native/blob/master/LICENSE)
 
 
 
@@ -149,6 +150,7 @@ If you have questions or need help integrating the product please [contact us](h
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
 - [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+- [Buy our PRO version](https://www.creative-tim.com/product/material-kit-pro-react-native)
 
 ##### Social Media
 
