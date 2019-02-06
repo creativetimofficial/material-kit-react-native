@@ -4,7 +4,7 @@
  ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-react-native.svg?style=flat)](https://github.com/creativetimofficial/ct-material-kit-react-native/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-react-native.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-react-native/issues?q=is%3Aissue+is%3Aclosed)
 
 
-![Product Gif](http://s3.amazonaws.com/creativetim_bucket/products/143/original/opt_mkprn_thumbnail.jpg)
+![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-react-native/opt_mkrn_thumbnail.jpg)
 
 Material Kit React Native is a fully coded app template built over [Galio.io](https://galio.io/?ref=creativetim), [React Native](https://facebook.github.io/react-native/?ref=creativetim) and [Expo](https://expo.io/?ref=creativetim) to allow you to create powerful and beautiful e-commerce mobile applications. We have redesigned all the usual components in Galio to make it look like Google's material design, minimalistic and easy to use.
 
