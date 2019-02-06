@@ -1,4 +1,4 @@
-# react-native-modal-dropdown
+# React Native Modal
 
 [https://github.com/sohobloo/react-native-modal-dropdown](https://github.com/sohobloo/react-native-modal-dropdown)
 

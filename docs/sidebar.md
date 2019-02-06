@@ -2,12 +2,12 @@
 
   * [Intro](/)
   * [How to install](install.md)
+  * [Packages](package.md)
 
 * [**License**](license.md)
 
 * **Components**
 
-  * [Summary](components/summary.md)
   * [Button](components/button.md)
   * [Select](components/select.md)
   * [Icon](components/icon.md)
@@ -17,9 +17,9 @@
   * [Header](components/header.md)
   * [Switch](components/switch.md)
 
-* **Plugins**
+* **3rd Party Tools**
 
   * [Expo](plugins/expo.md)
   * [Galio](plugins/galio.md)
-  * [react-native-modal-dropdown](plugins/modal-dropdown.md)
+  * [React Native Modal](plugins/modal-dropdown.md)
   * [react-navigation](plugins/navigation.md)
