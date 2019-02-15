@@ -19,12 +19,12 @@ You will save a lot of time going from prototyping to full-functional code, beca
 ### Components & Cards
 Material Kit React Native comes packed with a large number of components and cards. Putting together a mobile app has never been easier than matching together different components. From the profile screen to a settings screen, you can easily customise and build your screens. We have created multiple options for you to put together and customise into pixel perfect screens. 
 
-View [ all components/cards here](https://demos.creative-tim.com/material-kit-pro-react-native/presentation.html#cards).
+View [ all components/cards here](https://demos.creative-tim.com/material-kit-react-native/index.html#cards).
 
 ### Example Screens
 If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example screens. From onboarding screens to profile or discover screens, you will be able to quickly set up the basic structure for your React Native mobile project. 
 
-View [all screens here](https://demos.creative-tim.com/material-kit-pro-react-native/presentation.html#screens).
+View [all screens here](https://demos.creative-tim.com/material-kit-react-native/index.html#screens).
 
 
 Let us know your thoughts below. And good luck with development!
@@ -133,7 +133,6 @@ We use GitHub Issues as the official bug tracker for the Material Kit React Nati
 ## Technical Support or Questions
 
 If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
-
 
 
 ## Licensing
