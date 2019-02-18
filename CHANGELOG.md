@@ -1,3 +1,7 @@
+## [1.1.1] 2019-02-18
+### Updated dependencies
+- `galio-framework@0.4.3` to `galio-framework@0.4.4`
+
 ## [1.1.0] 2019-02-18
 ### Added files
 - Added .gitignore file

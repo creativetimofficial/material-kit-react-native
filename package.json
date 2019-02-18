@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "expo": "^32.0.0",
-    "galio-framework": "^0.4.3",
+    "galio-framework": "^0.4.4",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-native-modal-dropdown": "^0.6.2",
