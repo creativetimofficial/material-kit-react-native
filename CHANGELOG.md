@@ -1,3 +1,7 @@
+## [1.1.2] 2019-03-05
+### Updated license
+- added license inside App.js
+
 ## [1.1.1] 2019-02-18
 ### Updated dependencies
 - `galio-framework@0.4.3` to `galio-framework@0.4.4`
