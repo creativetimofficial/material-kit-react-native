@@ -14,7 +14,7 @@ toggleSwitch = switchId => this.setState({ [switchId]: !this.state[switchId] });
 />
 ```
 <p align="center">
-  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-pro-react-native/gh-pages/docs/assets/imgs/switch.png?token=APPN3Wmf1gMZGb21hkCRJaOws2nKNLeYks5cYZyCwA%3D%3D" width="424.2px" height="107.8px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/assets/img/docs/switch.png" width="424.2px" height="107.8px">
 </p>
 
 

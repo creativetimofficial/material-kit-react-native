@@ -8,7 +8,7 @@ Simple Example:
 <Product product={products[0]} horizontal />
 ```
 <p align="center">
-  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-pro-react-native/gh-pages/docs/assets/imgs/product.png?token=APPN3SG4aOt1dY0Q1R_gVjTuA3FtF1VXks5cYZypwA%3D%3D" width="302px" height="425px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/assets/img/docs/product.png" width="302px" height="425px">
 </p>
 
 

@@ -12,7 +12,7 @@ Simple example:
 />
 ```
 <p align="center">
-  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-pro-react-native/gh-pages/docs/assets/imgs/tabs.png?token=APPN3ajLmNkhK0K145aOC3MtTwYi1OZmks5cYZxwwA%3D%3D" width="315px" height="103px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/assets/img/docs/tabs.png" width="315px" height="103px">
 </p>
 
 

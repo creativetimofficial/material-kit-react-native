@@ -11,8 +11,8 @@ Simple example:
 <Button>Press here!</Button>
 ```
 <p align="center">
-  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-pro-react-native/gh-pages/docs/assets/imgs/buttons1.png?token=APPN3UgGo6ack2iSuXU25NB1mKqQmAcUks5cYZzwwA%3D%3D" width="244px" height="268px">
-  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-pro-react-native/gh-pages/docs/assets/imgs/buttons2.png?token=APPN3UtkINQvXlmrOVNtoT8sYSaJaklfks5cYZz8wA%3D%3D" width="275px" height="120px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/assets/img/docs/buttons1.png" width="244px" height="268px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/assets/img/docs/buttons2.png" width="275px" height="120px">
 </p>
 
 ### Props

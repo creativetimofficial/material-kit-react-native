@@ -16,7 +16,7 @@ Simple example:
   navigation={this.props.navigation} />
 ```
 <p align="center">
-  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-pro-react-native/gh-pages/docs/assets/imgs/header.png?token=APPN3c5vhTvbTxkoQVRRKDUqU7ubaTboks5cYZzawA%3D%3D" width="308px" height="329px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/assets/img/docs/header.png" width="308px" height="329px">
 </p>
 
 
