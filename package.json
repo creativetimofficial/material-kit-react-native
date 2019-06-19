@@ -1,5 +1,7 @@
 {
   "name": "rn-material-kit-free",
+  "version": "1.2.0",
+  "description": "Material Kit React Native. Coded by Creative Tim",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
@@ -16,7 +18,7 @@
     "expo": "^33.0.0",
     "expo-font": "^5.0.1",
     "expo-linear-gradient": "^5.0.1",
-    "galio-framework": "^0.5.2",
+    "galio-framework": "^0.5.3",
     "react": "16.8.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
     "react-native-modal-dropdown": "^0.6.2",
@@ -27,5 +29,9 @@
     "cross-env": "^5.2.0",
     "expo-cli": "^2.4.0",
     "jest-expo": "^31.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/material-kit-react-native/issues"
+  },
+  "homepage": "https://demos.creative-tim.com/material-kit-react-native/"
 }
