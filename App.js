@@ -16,7 +16,7 @@ import { Platform, StatusBar, Image } from 'react-native';
 import { AppLoading, Asset } from 'expo';
 import { Block, GalioProvider } from 'galio-framework';
 
-import Screens from './navigation/Screens';
+import AppContainer from './navigation/Screens';
 import { Images, products, materialTheme } from './constants/';
 
 // cache app images
@@ -59,7 +59,7 @@ export default class App extends React.Component {
         <GalioProvider theme={materialTheme}>
           <Block flex>
             {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-            <Screens />
+            <AppContainer />
           </Block>
         </GalioProvider>
       );

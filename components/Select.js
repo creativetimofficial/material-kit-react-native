@@ -26,7 +26,7 @@ export default class DropDown extends React.Component {
         {...props}>
         <Block flex row middle space="between">
           <Text size={12}>{this.state.value}</Text>
-          <Icon name="small-down" family="Galio" size={10} />
+          <Icon name="angle-down" family="font-awesome" size={11} />
         </Block>
       </ModalDropdown>
     )

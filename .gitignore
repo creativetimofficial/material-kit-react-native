@@ -1,2 +1,9 @@
-node_modules
-.expo
+node_modules/**/*
+.expo/*
+npm-debug.*
+package-lock.json
+yarn.lock
+*.jks
+*.p12
+*.key
+*.mobileprovision

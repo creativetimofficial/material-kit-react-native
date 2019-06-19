@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Dimensions, ScrollView, Image, ImageBackground, Platform } from 'react-native';
 import { Block, Text, theme } from 'galio-framework';
-import { LinearGradient } from 'expo';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import { Icon } from '../components';
 import { Images, materialTheme } from '../constants';
@@ -34,8 +34,8 @@ export default class Profile extends React.Component {
                   </Block>
                   <Block>
                     <Text color={theme.COLORS.MUTED} size={16}>
-                      <Icon name="pin-3" family="Galio" color={theme.COLORS.MUTED} size={16} />
-                      {`  `} Los Angeles, CA
+                      <Icon name="map-marker" family="font-awesome" color={theme.COLORS.MUTED} size={16} />
+                      {` `} Los Angeles, CA
                       </Text>
                   </Block>
                 </Block>

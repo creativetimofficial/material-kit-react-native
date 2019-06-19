@@ -32,7 +32,7 @@ export default class Settings extends React.Component {
             <TouchableOpacity onPress={() => navigate('Pro')}>
               <Block row middle space="between" style={{paddingTop:7}}>
                 <Text size={14}>{item.title}</Text>
-                <Icon name="stre-right" family="Galio" style={{ paddingRight: 5 }} />
+                <Icon name="angle-right" family="font-awesome" style={{ paddingRight: 5 }} />
               </Block>
             </TouchableOpacity>
           </Block>);

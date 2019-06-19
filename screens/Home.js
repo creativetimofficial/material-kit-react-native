@@ -10,7 +10,7 @@ import products from '../constants/products';
 export default class Home extends React.Component {
   renderSearch = () => {
     const { navigation } = this.props;
-    const iconCamera = <Icon size={16} color={theme.COLORS.MUTED} name="camera-18" family="GalioExtra" />
+    const iconCamera = <Icon size={16} color={theme.COLORS.MUTED} name="zoom-in" family="material" />
 
     return (
       <Input
@@ -31,7 +31,7 @@ export default class Home extends React.Component {
       <Block row style={styles.tabs}>
         <Button shadowless style={[styles.tab, styles.divider]} onPress={() => navigation.navigate('Pro')}>
           <Block row middle>
-            <Icon name="grid-square" family="Galio" style={{ paddingRight: 8 }} />
+            <Icon name="grid" family="feather" style={{ paddingRight: 8 }} />
             <Text size={16} style={styles.tabTitle}>Categories</Text>
           </Block>
         </Button>

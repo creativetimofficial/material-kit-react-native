@@ -161,7 +161,7 @@ export default class Components extends React.Component {
             <TouchableOpacity onPress={() => navigation.navigate('Pro')}>
               <Block row middle space="between" style={{ paddingTop: 7 }}>
                 <Text size={14}>Manage Options</Text>
-                <Icon name="stre-right" family="Galio" style={{ paddingRight: 5 }} />
+                <Icon name="angle-right" family="font-awesome" style={{ paddingRight: 5 }} />
               </Block>
             </TouchableOpacity>
           </Block>
@@ -209,7 +209,7 @@ export default class Components extends React.Component {
                 onlyIcon
                 shadowless
                 icon="facebook"
-                iconFamily="FontAwesome"
+                iconFamily="font-awesome"
                 iconColor={theme.COLORS.WHITE}
                 iconSize={theme.SIZES.BASE * 1.625}
                 color={theme.COLORS.FACEBOOK}
@@ -222,7 +222,7 @@ export default class Components extends React.Component {
                 onlyIcon
                 shadowless
                 icon="twitter"
-                iconFamily="FontAwesome"
+                iconFamily="font-awesome"
                 iconColor={theme.COLORS.WHITE}
                 iconSize={theme.SIZES.BASE * 1.625}
                 color={theme.COLORS.TWITTER}
@@ -235,7 +235,7 @@ export default class Components extends React.Component {
                 onlyIcon
                 shadowless
                 icon="dribbble"
-                iconFamily="FontAwesome"
+                iconFamily="font-awesome"
                 iconColor={theme.COLORS.WHITE}
                 iconSize={theme.SIZES.BASE * 1.625}
                 color={theme.COLORS.DRIBBBLE}

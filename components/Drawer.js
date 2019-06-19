@@ -24,16 +24,16 @@ class DrawerItem extends React.Component {
         return (
           <Icon
             size={16}
-            name="users-wm"
-            family="Galio"
+            name="md-woman"
+            family="ionicon"
             color={focused ? 'white' : materialTheme.COLORS.MUTED} />
         );
       case 'Man':
         return (
           <Icon
             size={16}
-            name="users-mm"
-            family="Galio"
+            name="man"
+            family="entypo"
             color={focused ? 'white' : materialTheme.COLORS.MUTED} />
         );
       case 'Kids':
@@ -48,8 +48,8 @@ class DrawerItem extends React.Component {
         return (
           <Icon
             size={16}
-            name="selection"
-            family="Galio"
+            name="grid-on"
+            family="material"
             color={focused ? 'white' : materialTheme.COLORS.MUTED} />
         );
       case 'Profile':
@@ -64,32 +64,32 @@ class DrawerItem extends React.Component {
         return (
           <Icon
             size={16}
-            name="flower-06"
-            family="Galio"
+            name="gears"
+            family="font-awesome"
             color={focused ? 'white' : materialTheme.COLORS.MUTED} />
         );
       case 'Components':
         return (
           <Icon
             size={16}
-            name="ui-04"
-            family="Galio"
+            name="md-switch"
+            family="ionicon"
             color={focused ? 'white' : materialTheme.COLORS.MUTED} />
         );
       case 'Sign In':
         return (
           <Icon
             size={16}
-            name="log-in"
-            family="Galio"
+            name="ios-log-in"
+            family="ionicon"
             color={focused ? 'white' : materialTheme.COLORS.MUTED} />
         );
       case 'Sign Up':
         return (
           <Icon
             size={16}
-            name="add-27"
-            family="Galio"
+            name="md-person-add"
+            family="ionicon"
             color={focused ? 'white' : materialTheme.COLORS.MUTED} />
         );
       default:

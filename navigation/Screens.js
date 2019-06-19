@@ -1,6 +1,6 @@
 import React from 'react';
 import { Easing, Animated, Platform } from 'react-native';
-import { createSwitchNavigator, createStackNavigator, createDrawerNavigator } from 'react-navigation';
+import { createSwitchNavigator, createStackNavigator, createDrawerNavigator, createAppContainer } from 'react-navigation';
 
 import { Block, Text, theme } from "galio-framework";
 
@@ -61,44 +61,37 @@ const ProfileStack = createStackNavigator({
 }, {
   cardStyle: { backgroundColor: '#EEEEEE', },
   transitionConfig,
-})
+});
 
-const ComponentsStack = createStackNavigator({
-  Components: {
-    screen: ComponentsScreen,
+const SettingsStack = createStackNavigator({
+  Settings: {
+    screen: SettingsScreen,
     navigationOptions: ({ navigation }) => ({
-      header: <Header back title="Components" navigation={navigation} />,
+      header: <Header title="Settings" navigation={navigation} />,
     })
   },
 }, {
   cardStyle: { backgroundColor: '#EEEEEE', },
   transitionConfig,
-})
+});
+
+const ComponentsStack = createStackNavigator({
+  Components: {
+    screen: ComponentsScreen,
+    navigationOptions: ({ navigation }) => ({
+      header: <Header title="Components" navigation={navigation} />,
+    })
+  },
+}, {
+  cardStyle: { backgroundColor: '#EEEEEE', },
+  transitionConfig,
+});
 
 const HomeStack = createStackNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: ({navigation}) => ({
       header: <Header search tabs title="Home" navigation={navigation} />,
-    })
-  },
-  Settings: {
-    screen: SettingsScreen,
-    navigationOptions: ({navigation}) => ({
-      header: <Header back title="Settings" navigation={navigation} />,
-    })
-  },
-  Components: {
-    screen: ComponentsScreen,
-    navigationOptions: ({navigation}) => ({
-      header: <Header title="Components" navigation={navigation} />,
-    })
-  },
-  Profile: {
-    screen: ProfileScreen,
-    navigationOptions: ({navigation}) => ({
-      header: <Header white transparent title="Profile" navigation={navigation} />,
-      headerTransparent: true,
     })
   },
   Pro: {
@@ -124,13 +117,13 @@ const AppStack = createDrawerNavigator(
         drawerLabel: () => {},
       },
     },
-    Dashboard: {
+    Home: {
       screen: HomeStack,
-      navigationOptions: (navOpt) => ({
+      navigationOptions: {
         drawerLabel: ({focused}) => (
           <Drawer focused={focused} screen="Home" title="Home" />
-        ),
-      }),
+        )
+      }
     },
     Woman: {
       screen: ProScreen,
@@ -173,7 +166,7 @@ const AppStack = createDrawerNavigator(
       }),
     },
     Settings: {
-      screen: SettingsScreen,
+      screen: SettingsStack,
       navigationOptions: (navOpt) => ({
         drawerLabel: ({focused}) => (
           <Drawer focused={focused} screen="Settings" title="Settings" />
@@ -214,12 +207,5 @@ const AppStack = createDrawerNavigator(
   Menu
 );
 
-export default createSwitchNavigator(
-  {
-    App: AppStack,
-    Home: HomeStack,
-  },
-  {
-    initialRouteName: 'App',
-  }
-);
+const AppContainer = createAppContainer(AppStack);
+export default AppContainer;

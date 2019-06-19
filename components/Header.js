@@ -37,8 +37,8 @@ const SearchButton = ({isWhite, style, navigation}) => (
   <TouchableOpacity style={[styles.button, style]} onPress={() => navigation.navigate('Pro')}>
     <Icon
       size={16}
-      family="Galio"
-      name="zoom-split"
+      family="entypo"
+      name="magnifying-glass"
       color={theme.COLORS[isWhite ? 'WHITE' : 'ICON']}
     />
   </TouchableOpacity>
@@ -116,7 +116,7 @@ class Header extends React.Component {
         style={styles.search}
         placeholder="What are you looking for?"
         onFocus={() => navigation.navigate('Pro')}
-        iconContent={<Icon size={16} color={theme.COLORS.MUTED} name="zoom-split" family="Galio" />}
+        iconContent={<Icon size={16} color={theme.COLORS.MUTED} name="magnifying-glass" family="entypo" />}
       />
     )
   }
@@ -128,7 +128,7 @@ class Header extends React.Component {
       <Block row style={styles.tabs}>
         <Button shadowless style={[styles.tab, styles.divider]} onPress={() => navigation.navigate('Pro')}>
           <Block row middle>
-            <Icon name="grid-square" family="Galio" style={{ paddingRight: 8 }} />
+            <Icon name="grid" family="feather" style={{ paddingRight: 8 }} />
             <Text size={16} style={styles.tabTitle}>{tabTitleLeft || 'Categories'}</Text>
           </Block>
         </Button>
