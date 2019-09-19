@@ -4,9 +4,9 @@
     "description": "React Native - Material Kit Free",
     "slug": "rn-material-kit-free",
     "privacy": "unlisted",
-    "sdkVersion": "33.0.0",
+    "sdkVersion": "34.0.0",
     "platforms": ["ios", "android"],
-    "version": "1.0.1",
+    "version": "1.3.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {

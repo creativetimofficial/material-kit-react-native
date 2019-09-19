@@ -173,7 +173,8 @@ class Header extends React.Component {
           transparent={transparent}
           right={this.renderRight()}
           rightStyle={{ alignItems: 'center' }}
-          leftStyle={{ paddingVertical: 12, flex: 0.3 }}
+          leftStyle={{ flex: 0.3, paddingTop: 2  }}
+          leftIconName="navicon"
           leftIconColor={white ? theme.COLORS.WHITE : theme.COLORS.ICON}
           titleStyle={[
             styles.title,

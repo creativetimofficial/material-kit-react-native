@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Material Kit React Native - v1.1.2
+ * Material Kit React Native - v1.3.0
  =========================================================
  * Product Page: https://demos.creative-tim.com/material-kit-react-native/
  * Copyright 2019 Creative Tim (http://www.creative-tim.com)
@@ -13,7 +13,8 @@
 
 import React from 'react';
 import { Platform, StatusBar, Image } from 'react-native';
-import { AppLoading, Asset } from 'expo';
+import { AppLoading } from 'expo';
+import { Asset } from 'expo-asset';
 import { Block, GalioProvider } from 'galio-framework';
 
 import AppContainer from './navigation/Screens';
