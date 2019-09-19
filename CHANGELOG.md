@@ -1,3 +1,16 @@
+## [1.3.0] 2019 - 09 - 19
+### Updated dependencies
+- `expo@33.0.0` to `expo@34.0.3`
+- `expo-font@5.0.1` to `expo-font@6.0.1`
+- `expo-linear-gradient@5.0.1` to `expo-linear-gradient@6.0.0`
+- `galio-framework@0.5.3` to `galio-framework@0.6.1`
+- `react-native SDK@33.0.0` to `react-native SDK@34.0.0`
+- added `expo-asset@6.0.0`
+- added `react-native-gesture-handler@1.3.0`
+### Updated files
+- updated `Header.js` because of galio's new version
+- updated `App.js` because of `expo-asset`
+
 ## [1.2.0] 2019 - 06 - 19
 ### Updated dependencies
 - `expo@32.0.0` to `expo@33.0.0`
