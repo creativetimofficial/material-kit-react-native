@@ -35,12 +35,12 @@ Check out the PRO version for a lot more screens:
 
 ## Example screenshots
 <p align="center">
-  <img src="http://i64.tinypic.com/293ennq.png" width="225px" height="487.2px">
-  <img src="http://i67.tinypic.com/20qj9ja.png" width="225px" height="487.2px">
-  <img src="http://i64.tinypic.com/dwc48w.png" width="225px" height="487.2px">
-  <img src="http://i65.tinypic.com/2q1rndg.png" width="225px" height="487.2px">
-  <img src="http://i64.tinypic.com/mv5d0i.png" width="225px" height="487.2px">
-  <img src="http://i67.tinypic.com/2vlpeg6.png" width="225px" height="487.2px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/docs/assets/onboarding_screen.png" width="225px" height="487.2px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/docs/assets/navigation_screen.png" width="225px" height="487.2px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/docs/assets/home_screen.png" width="225px" height="487.2px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/docs/assets/components_screen.png" width="225px" height="487.2px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/docs/assets/profile_screen.png" width="225px" height="487.2px">
+  <img src="https://raw.githubusercontent.com/creativetimofficial/material-kit-react-native/gh-pages/docs/assets/settings_screen.png" width="225px" height="487.2px">
 </p>
 
 
