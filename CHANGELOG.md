@@ -1,3 +1,9 @@
+## [1.4.0] 2019 - 10 - 27
+### Updated dependencies
+
+### Updated devDependencies
+
+
 ## [1.3.0] 2019 - 09 - 19
 ### Updated dependencies
 - `expo@33.0.0` to `expo@34.0.3`

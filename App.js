@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Material Kit React Native - v1.3.0
+ * Material Kit React Native - v1.4.0
  =========================================================
  * Product Page: https://demos.creative-tim.com/material-kit-react-native/
  * Copyright 2019 Creative Tim (http://www.creative-tim.com)
