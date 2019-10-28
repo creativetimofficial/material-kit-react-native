@@ -1,8 +1,14 @@
 ## [1.4.0] 2019 - 10 - 27
 ### Updated dependencies
-
+- `expo@34.0.3` to `expo@35.0.0`
+- `expo-asset@6.0.0` to `expo-asset@7.0.0`
+- `expo-font@6.0.1` to `expo-font@7.0.0`
+- `expo-linear-gradient@6.0.0` to `expo-linear-gradient@7.0.0`
+- `galio-framework@0.6.1` to `galio-framework@0.6.3`
+`react-native SDK@34.0.0` to `react-native SDK@35.0.0`
 ### Updated devDependencies
-
+- `babel-preset-expo@5.0.0` to `babel-preset-expo@7.0.0`
+- `jest-expo@31.0.0` to `jest-expo@35.0.0`
 
 ## [1.3.0] 2019 - 09 - 19
 ### Updated dependencies
