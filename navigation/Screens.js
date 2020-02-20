@@ -78,9 +78,9 @@ function ComponentsStack(props) {
       <Stack.Screen
         name="Components"
         component={ComponentsScreen}
-        option={{
-          header: ({ navigation }) => (
-            <Header title="Components" navigation={navigation} />
+        options={{
+          header: ({ navigation, scene }) => (
+            <Header title="Components" scene={scene} navigation={navigation} />
           )
         }}
       />
