@@ -1,3 +1,31 @@
+## [1.5.0] 2019 - 02 - 20
+### Removed dependencies
+- removed `react-navigation@3.11.0`
+### Added dependencies
+- added `@react-navigation/compat@5.0.0`
+- added `@react-navigation/drawer@5.0.0`
+- added `@react-navigation/native@5.0.0`
+- added `@react-navigation/stack@5.0.0`
+- added `@react-native-community/masked-view@0.1.5`
+- added `react-native-reanimated@1.4.0`
+- added `react-native-safe-area-context@0.6.0`
+- added `react-native-screeens@2.0.0-alpha.12`
+### Updated dependencies
+- updated `expo@35.0.0` to `expo@36.0.0`
+- updated `expo-asset@7.0.0` to `expo-asset@8.0.0`
+- updated `expo-font@7.0.0` to `expo-font@8.0.0`
+- updated `expo-cli@2.4.0` to `expo-cli@3.11.7`
+- updated `expo-linear-gradient@7.0.0` to `expo-linear-gradient@8.0.0`
+- updated `react@16.8.3` to `react@16.9.0`
+- updated `babel-preset-expo@7.0.0` to `babel-preset-expo@8.0.0`
+- updated `cross-env@5.2.0` to `cross-env@7.0.0`
+- updated `jest-expo@35.0.0` to `jest-expo@36.0.0`
+### Updated files
+- changed the whole routing from `Screens.js` because `react-navigation@5.0.0` has a new dynamic API
+- changed `Menu.js` for a new Drawer custom component
+- changed `Drawer.js` for a new type of `<DrawerCustomItem />`
+- changed props and variables so that the new `react-navigation` API could work with the following files: `Pro.js`, `Header.js`, `Product.js`, `Onboarding.js`
+
 ## [1.4.0] 2019 - 10 - 27
 ### Updated dependencies
 - `expo@34.0.3` to `expo@35.0.0`
