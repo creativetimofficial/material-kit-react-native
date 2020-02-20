@@ -1,5 +1,5 @@
 import React from 'react';
-import { Easing, Animated, Platform } from 'react-native';
+import { Easing, Animated, Dimensions } from 'react-native';
 import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
@@ -12,46 +12,22 @@ import ProfileScreen from '../screens/Profile';
 import ProScreen from '../screens/Pro';
 import SettingsScreen from '../screens/Settings';
 
-import Menu from './Menu';
-import { Icon, Header } from '../components'
+import CustomDrawerContent from './Menu';
+import { Icon, Header } from '../components';
+import { Images, materialTheme } from "../constants/";
+
+const { width } = Dimensions.get("screen");
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
-const transitionConfig = (transitionProps, prevTransitionProps) => ({
-  transitionSpec: {
-    duration: 400,
-    easing: Easing.out(Easing.poly(4)),
-    timing: Animated.timing,
-  },
-  screenInterpolator: sceneProps => {
-    const { layout, position, scene } = sceneProps;
-    const thisSceneIndex = scene.index
-    const width = layout.initWidth
-    
-    const scale = position.interpolate({
-      inputRange: [thisSceneIndex - 1, thisSceneIndex, thisSceneIndex + 1],
-      outputRange: [4, 1, 1]
-    })
-    const opacity = position.interpolate({
-      inputRange: [thisSceneIndex - 1, thisSceneIndex, thisSceneIndex + 1],
-      outputRange: [0, 1, 1],
-    })
-    const translateX = position.interpolate({
-      inputRange: [thisSceneIndex - 1, thisSceneIndex],
-      outputRange: [width, 0],
-    })
-
-    const scaleWithOpacity = { opacity }
-    const screenName = "Search"
-
-    if (screenName === transitionProps.scene.route.routeName ||
-      (prevTransitionProps && screenName === prevTransitionProps.scene.route.routeName)) {
-      return scaleWithOpacity;
-    }
-    return { transform: [{ translateX }] }
-  }
-})
+const profile = {
+  avatar: Images.Profile,
+  name: "Rachel Brown",
+  type: "Seller",
+  plan: "Pro",
+  rating: 4.8
+};
 
 function ProfileStack(props) {
   return (

@@ -1,75 +1,100 @@
 import React from "react";
-import { DrawerItems } from 'react-navigation';
-import { TouchableWithoutFeedback, ScrollView, StyleSheet, Dimensions, Image } from "react-native";
+import { TouchableWithoutFeedback, ScrollView, StyleSheet, Image } from "react-native";
 import { Block, Text, theme } from "galio-framework";
 
-import { Icon } from '../components/';
+import { Icon, Drawer as DrawerCustomItem } from '../components/';
 import { Images, materialTheme } from "../constants/";
 
-const { width } = Dimensions.get('screen');
 
-const Drawer = (props) => (
-  <Block style={styles.container} forceInset={{ top: 'always', horizontal: 'never' }}>
-    <Block flex={0.2} style={styles.header}>
-      <TouchableWithoutFeedback onPress={() => props.navigation.navigate('Profile')} >
-        <Block style={styles.profile}>
-          <Image source={{ uri: props.profile.avatar}} style={styles.avatar} />
-          <Text h5 color="white">{props.profile.name}</Text>
+function CustomDrawerContent({
+  drawerPosition,
+  navigation,
+  profile,
+  focused,
+  state,
+  ...rest
+}) {
+  const insets = useSafeArea();
+  const screens = [
+    "Home",
+    "Woman",
+    "Man",
+    "Kids",
+    "New Collection",
+    "Profile",
+    "Settings",
+    "Components"
+  ];
+  return (
+    <Block
+      style={styles.container}
+      forceInset={{ top: "always", horizontal: "never" }}
+    >
+      <Block flex={0.23} style={styles.header}>
+        <TouchableWithoutFeedback
+          onPress={() => navigation.navigate("Profile")}
+        >
+          <Block style={styles.profile}>
+            <Image source={{ uri: profile.avatar }} style={styles.avatar} />
+            <Text h5 color={"white"}>
+              {profile.name}
+            </Text>
+          </Block>
+        </TouchableWithoutFeedback>
+        <Block row>
+          <Block middle style={styles.pro}>
+            <Text size={16} color="white">
+              {profile.plan}
+            </Text>
+          </Block>
+          <Text size={16} muted style={styles.seller}>
+            {profile.type}
+          </Text>
+          <Text size={16} color={materialTheme.COLORS.WARNING}>
+            {profile.rating}{" "}
+            <Icon name="shape-star" family="GalioExtra" size={14} />
+          </Text>
         </Block>
-      </TouchableWithoutFeedback>
-      <Block row>
-        <Block middle style={styles.pro}>
-          <Text size={16} color="white">{props.profile.plan}</Text>
-        </Block>
-        <Text size={16} muted style={styles.seller}>{props.profile.type}</Text>
-        <Text size={16} color={materialTheme.COLORS.WARNING}>
-          {props.profile.rating} <Icon name="shape-star" family="GalioExtra" size={14} />
-        </Text>
+      </Block>
+      <Block flex style={{ paddingLeft: 7, paddingRight: 14 }}>
+        <ScrollView
+          contentContainerStyle={[
+            {
+              paddingTop: insets.top * 0.4,
+              paddingLeft: drawerPosition === "left" ? insets.left : 0,
+              paddingRight: drawerPosition === "right" ? insets.right : 0
+            }
+          ]}
+          showsVerticalScrollIndicator={false}
+        >
+          {screens.map((item, index) => {
+            return (
+              <DrawerCustomItem
+                title={item}
+                key={index}
+                navigation={navigation}
+                focused={state.index === index ? true : false}
+              />
+            );
+          })}
+        </ScrollView>
+      </Block>
+      <Block flex={0.25} style={{ paddingLeft: 7, paddingRight: 14 }}>
+        <DrawerCustomItem
+          title="Sign In"
+          navigation={navigation}
+          focused={state.index === 8 ? true : false}
+        />
+        <DrawerCustomItem
+          title="Sign Up"
+          navigation={navigation}
+          focused={state.index === 9 ? true : false}
+        />
       </Block>
     </Block>
-    <Block flex>
-      <ScrollView showsVerticalScrollIndicator={false} style={{ flex: 1 }}>
-        <DrawerItems {...props} />
-      </ScrollView>
-    </Block>
-  </Block>
-);
+  );
+}
 
-const profile = {
-  avatar: Images.Profile,
-  name: 'Rachel Brown',
-  type: 'Seller',
-  plan: 'Pro',
-  rating: 4.8
-};
-
-const Menu = {
-  contentComponent: props => <Drawer {...props} profile={profile} />,
-  drawerBackgroundColor: 'white',
-  drawerWidth: width * 0.8,
-  contentOptions: {
-    activeTintColor: 'white',
-    inactiveTintColor: '#000',
-    activeBackgroundColor: 'transparent',
-    itemStyle: {
-      width: width * 0.75,
-      backgroundColor: 'transparent',
-    },
-    labelStyle: {
-      fontSize: 18,
-      marginLeft: 12,
-      fontWeight: 'normal',
-    },
-    itemsContainerStyle: {
-      paddingVertical: 16,
-      paddingHorizonal: 12,
-      justifyContent: 'center',
-      alignContent: 'center',
-      alignItems: 'center',
-      overflow: 'hidden',
-    },
-  },
-};
 
 const styles = StyleSheet.create({
   container: {
@@ -108,4 +133,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Menu;
+export default CustomDrawerContent;
