@@ -17,8 +17,14 @@ import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
 import { Block, GalioProvider } from 'galio-framework';
 
-import AppContainer from './navigation/Screens';
 import { Images, products, materialTheme } from './constants/';
+
+import { NavigationContainer } from '@react-navigation/native';
+import Screens from './navigation/Screens';
+
+// Before rendering any navigation stack
+import { enableScreens } from 'react-native-screens';
+enableScreens();
 
 // cache app images
 const assetImages = [
@@ -57,12 +63,14 @@ export default class App extends React.Component {
       );
     } else {
       return (
-        <GalioProvider theme={materialTheme}>
-          <Block flex>
-            {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-            <AppContainer />
-          </Block>
-        </GalioProvider>
+        <NavigationContainer>
+          <GalioProvider theme={materialTheme}>
+            <Block flex>
+              {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
+              <Screens />
+            </Block>
+          </GalioProvider>
+        </NavigationContainer>
       );
     }
   }

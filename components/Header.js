@@ -1,5 +1,5 @@
 import React from 'react';
-import { withNavigation } from 'react-navigation';
+import { withNavigation } from '@react-navigation/compat';
 import { TouchableOpacity, StyleSheet, Platform, Dimensions } from 'react-native';
 import { Button, Block, NavBar, Input, Text, theme } from 'galio-framework';
 
@@ -52,7 +52,6 @@ class Header extends React.Component {
 
   renderRight = () => {
     const { white, title, navigation } = this.props;
-    const { routeName } = navigation.state;
 
     if (title === 'Title') {
       return [
@@ -61,7 +60,7 @@ class Header extends React.Component {
       ]
     }
 
-    switch (routeName) {
+    switch (title) {
       case 'Home':
         return ([
           <ChatButton key='chat-home' navigation={navigation} isWhite={white} />,
@@ -157,8 +156,8 @@ class Header extends React.Component {
 
   render() {
     const { back, title, white, transparent, navigation } = this.props;
-    const { routeName } = navigation.state;
-    const noShadow = ["Search", "Categories", "Deals", "Pro", "Profile"].includes(routeName);
+    // const { routeName } = navigation.state;
+    const noShadow = ["Search", "Categories", "Deals", "Pro", "Profile"].includes(title);
     const headerStyles = [
       !noShadow ? styles.shadow : null,
       transparent ? { backgroundColor: 'rgba(0,0,0,0)' } : null,
@@ -174,7 +173,7 @@ class Header extends React.Component {
           right={this.renderRight()}
           rightStyle={{ alignItems: 'center' }}
           leftStyle={{ flex: 0.3, paddingTop: 2  }}
-          leftIconName="navicon"
+          leftIconName={(back ? 'chevron-left' : 'navicon')}
           leftIconColor={white ? theme.COLORS.WHITE : theme.COLORS.ICON}
           titleStyle={[
             styles.title,
