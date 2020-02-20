@@ -31,7 +31,7 @@ function CustomDrawerContent({
       style={styles.container}
       forceInset={{ top: "always", horizontal: "never" }}
     >
-      <Block flex={0.23} style={styles.header}>
+      <Block flex={0.25} style={styles.header}>
         <TouchableWithoutFeedback
           onPress={() => navigation.navigate("Profile")}
         >
@@ -80,7 +80,7 @@ function CustomDrawerContent({
           })}
         </ScrollView>
       </Block>
-      <Block flex={0.25} style={{ paddingLeft: 7, paddingRight: 14 }}>
+      <Block flex={0.3} style={{ paddingLeft: 7, paddingRight: 14 }}>
         <DrawerCustomItem
           title="Sign In"
           navigation={navigation}

@@ -38,6 +38,7 @@ function ProfileStack(props) {
         options={{
           header: ({ navigation, scene }) => (
             <Header
+              white
               transparent
               title="Profile"
               scene={scene}
@@ -89,7 +90,7 @@ function ComponentsStack(props) {
 
 function HomeStack(props) {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator mode="card" headerMode="screen">
       <Stack.Screen 
         name="Home"
         component={HomeScreen}
@@ -97,7 +98,7 @@ function HomeStack(props) {
           header: ({ navigation, scene }) => (
             <Header 
               search
-              options
+              tabs
               title="Home"
               navigation={navigation}
               scene={scene}
