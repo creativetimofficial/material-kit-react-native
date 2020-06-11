@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Switch, FlatList, Platform, TouchableOpacity, ScrollView } from "react-native";
+import { StyleSheet, Switch, FlatList, Platform, TouchableOpacity, View } from "react-native";
 import { Block, Text, theme, Icon } from "galio-framework";
 
 import materialTheme from '../constants/Theme';
@@ -60,7 +60,7 @@ export default class Settings extends React.Component {
     ];
 
     return (
-      <ScrollView
+      <View
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.settings}>
         <FlatList
@@ -104,7 +104,7 @@ export default class Settings extends React.Component {
           keyExtractor={(item, index) => item.id}
           renderItem={this.renderItem}
         />
-      </ScrollView>
+      </View>
       
     );
   }
