@@ -16,10 +16,10 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.6",
-    "@react-navigation/compat": "~5.0.5",
-    "@react-navigation/drawer": "~5.0.5",
-    "@react-navigation/native": "~5.0.5",
-    "@react-navigation/stack": "~5.0.6",
+    "@react-navigation/compat": "~5.1.25",
+    "@react-navigation/drawer": "~5.8.2",
+    "@react-navigation/native": "~5.5.0",
+    "@react-navigation/stack": "~5.4.1",
     "expo": "^37.0.0",
     "expo-asset": "~8.1.5",
     "expo-font": "~8.1.0",
@@ -34,7 +34,7 @@
     "react-native-screens": "~2.2.0"
   },
   "devDependencies": {
-    "babel-preset-expo": "^8.1.0",
+    "babel-preset-expo": "^8.2.1",
     "cross-env": "~7.0.0",
     "expo-cli": "~3.11.7",
     "jest-expo": "^37.0.0"
