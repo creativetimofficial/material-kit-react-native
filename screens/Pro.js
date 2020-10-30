@@ -67,7 +67,7 @@ export default class Pro extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.COLORS.BLACK,
+    backgroundColor: "black",
     marginTop: Platform.OS === 'android' ? -HeaderHeight : 0,
   },
   padded: {
