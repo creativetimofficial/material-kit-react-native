@@ -55,12 +55,12 @@ export default class Components extends React.Component {
             </Button>
           </Block>
           <Block center>
-            <Button shadowless color="error" style={[styles.button, styles.shadow]}>
+            <Button shadowless color="danger" style={[styles.button, styles.shadow]}>
               ERROR
             </Button>
           </Block>
           <Block row space="evenly">
-            <Block flex left>
+            <Block flex left style={{marginTop: 8}}>
               <Select
                 defaultIndex={1}
                 options={[1, 2, 3, 4, 5]}
@@ -331,6 +331,7 @@ export default class Components extends React.Component {
 
 const styles = StyleSheet.create({
   components: {
+    width: width
   },
   title: {
     paddingVertical: theme.SIZES.BASE,
@@ -362,30 +363,6 @@ const styles = StyleSheet.create({
     height: 34,
     paddingHorizontal: theme.SIZES.BASE,
     paddingVertical: 10,
-  },
-  input: {
-    borderBottomWidth: 1,
-  },
-  inputDefault: {
-    borderBottomColor: materialTheme.COLORS.PLACEHOLDER,
-  },
-  inputTheme: {
-    borderBottomColor: materialTheme.COLORS.PRIMARY,
-  },
-  inputTheme: {
-    borderBottomColor: materialTheme.COLORS.PRIMARY,
-  },
-  inputInfo: {
-    borderBottomColor: materialTheme.COLORS.INFO,
-  },
-  inputSuccess: {
-    borderBottomColor: materialTheme.COLORS.SUCCESS,
-  },
-  inputWarning: {
-    borderBottomColor: materialTheme.COLORS.WARNING,
-  },
-  inputDanger: {
-    borderBottomColor: materialTheme.COLORS.ERROR,
   },
   imageBlock: {
     overflow: 'hidden',

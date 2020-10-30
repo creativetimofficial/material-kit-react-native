@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, StyleSheet, StatusBar, Dimensions, Platform } from 'react-native';
+import { ImageBackground, StyleSheet, StatusBar, Dimensions } from 'react-native';
 import { Block, Button, Text, theme } from 'galio-framework';
 
 const { height, width } = Dimensions.get('screen');
@@ -51,7 +51,7 @@ export default class Onboarding extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.COLORS.BLACK,
+    backgroundColor: "black",
   },
   padded: {
     paddingHorizontal: theme.SIZES.BASE * 2,
