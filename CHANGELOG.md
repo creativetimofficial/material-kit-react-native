@@ -1,3 +1,44 @@
+## [1.7.0] 2020 - 10 - 30
+### Updated dependencies
+- updated `expo-asset@8.1.5` to `expo-asset@8.2.0`
+- updated `expo-font@8.1.0` to `expo-font@8.3.0`
+- updated `expo-linear-gradient@8.1.5` to `expo-linear-gradient@8.3.0`
+- updated `react-native-gesture-handler@1.6.0` to  `react-native-gesture-handler@1.7.0`
+- updated `react-native SDK@37.0.1` to `react-native SDK@39.0.3`
+- updated `babel-preset-expo@8.2.1` to `babel-preset-expo@8.3.0`
+- updated `Expo @37.0.0` to `Expo @39.0.0`
+- updated `jest-expo@37.0.0` to `jest-expo@39.0.0`
+- updated `react-native-reanimated@1.7.0` to `react-native-reanimated@1.13.0`
+- updated `react-native-screens@2.2.0` to `react-native-screens@2.10.1`
+- updated `react-native-safe-area-context@0.7.3` to `react-native-safe-area-context@3.1.4`
+- updated `@react-native-community/masked-view@0.1.6` to `@react-native-community/masked-view@0.1.10`
+- updated `react@16.9.0` to `react@16.13.1`
+- updated `galio-framework@0.6.3` to `galio-framework@0.7.1`
+- changed fork for `react-native-modal-dropdown`
+
+### Updated files
+- updated `Onboarding.js` -> fixed background color
+- updated `Pro.js` -> fixed background color
+- updated `Components.js` -> fixed ScrollView bug, error related to button color, added marginTop for the Dropdown and removed unnecessary styles
+
+## [1.6.0] 2020 - 06 - 11
+### Updated dependencies
+- updated `expo-asset@8.0.0` to `expo-asset@8.1.5`
+- updated `expo-font@8.0.0` to `expo-font@8.1.0`
+- updated `react-native-gesture-handler@1.5.0` to  `react-native-gesture-handler@1.6.0`
+- updated `react-native-screens@2.0.0-beta.8` to `react-native-screens@2.2.0`
+- updated `react-native SDK@36.0.0` to `react-native SDK@37.0.0`
+- updated `babel-preset-expo@8.0.0` to `babel-preset-expo@8.2.1`
+- updated `Expo @36.0.0` to `Expo @37.0.0`
+- updated `@react-navigation/native@5.0.5` to `@react-navigation/native@5.5.0`
+- updated `@react-navigation/stack@5.0.6` to `@react-navigation/stack@5.4.1`
+- updated `@react-navigation/compat@5.0.5` to `@react-navigation/compat@5.1.25`
+- updated `@react-navigation/drawer@5.0.5` to `@react-navigation/drawer@5.8.2`
+- updated `jest-expo@36.0.0` to `jest-expo@37.0.0`
+
+### Updated files
+- updated `Settings.js` and removed a warning which was showing up because of `ScrollView`
+
 ## [1.5.0] 2019 - 02 - 20
 ### Removed dependencies
 - removed `react-navigation@3.11.0`
