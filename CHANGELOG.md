@@ -1,3 +1,19 @@
+## [1.8.0] 2021 - 03 - 04
+### Updated dependencies
+- updated `expo-asset@8.2.0` to `expo-asset@8.2.1`
+- updated `expo-font@8.3.0` to `expo-font@8.4.0`
+- updated `expo-linear-gradient@8.3.0` to `expo-linear-gradient@8.4.0`
+- updated `react-native-gesture-handler@1.7.0` to  `react-native-gesture-handler@1.8.0`
+- updated `react-native SDK@39.0.3` to `react-native SDK@40.0.1`
+- updated `Expo @39.0.0` to `Expo @40.0.0`
+- updated `jest-expo@39.0.0` to `jest-expo@40.0.0`
+- updated `react-native-screens@2.10.1` to `react-native-screens@2.15.2`
+- updated `react-native-safe-area-context@3.1.4` to `react-native-safe-area-context@3.1.9`
+- updated `@react-navigation/drawer@5.8.2` to `@react-navigation/drawer@5.12.4`
+- updated `@react-navigation/native@5.5.0` to `@react-navigation/native@5.9.3`
+- updated `@react-navigation/stack@5.4.1` to `@react-navigation/stack@5.14.3`
+- added `expo-app-loading@1.01`
+
 ## [1.7.0] 2020 - 10 - 30
 ### Updated dependencies
 - updated `expo-asset@8.1.5` to `expo-asset@8.2.0`
