@@ -1,20 +1,18 @@
-import React from 'react';
-import { Easing, Animated, Dimensions } from 'react-native';
-import { createStackNavigator } from "@react-navigation/stack";
-import { createDrawerNavigator } from "@react-navigation/drawer";
-
+import { Animated, Dimensions, Easing } from "react-native";
 import { Block, Text, theme } from "galio-framework";
-
-import ComponentsScreen from '../screens/Components';
-import HomeScreen from '../screens/Home';
-import OnboardingScreen from '../screens/Onboarding';
-import ProfileScreen from '../screens/Profile';
-import ProScreen from '../screens/Pro';
-import SettingsScreen from '../screens/Settings';
-
-import CustomDrawerContent from './Menu';
-import { Icon, Header } from '../components';
+import { Header, Icon } from "../components";
 import { Images, materialTheme } from "../constants/";
+
+import ComponentsScreen from "../screens/Components";
+import CustomDrawerContent from "./Menu";
+import HomeScreen from "../screens/Home";
+import OnboardingScreen from "../screens/Onboarding";
+import ProScreen from "../screens/Pro";
+import ProfileScreen from "../screens/Profile";
+import React from "react";
+import SettingsScreen from "../screens/Settings";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createStackNavigator } from "@react-navigation/stack";
 
 const { width } = Dimensions.get("screen");
 
@@ -26,12 +24,18 @@ const profile = {
   name: "Rachel Brown",
   type: "Seller",
   plan: "Pro",
-  rating: 4.8
+  rating: 4.8,
 };
 
 function ProfileStack(props) {
   return (
-    <Stack.Navigator initialRouteName="Profile" mode="card" headerMode="screen">
+    <Stack.Navigator
+      initialRouteName="Profile"
+      screenOptions={{
+        mode: "card",
+        headerShown: "screen",
+      }}
+    >
       <Stack.Screen
         name="Profile"
         component={ProfileScreen}
@@ -45,7 +49,7 @@ function ProfileStack(props) {
               navigation={navigation}
             />
           ),
-          headerTransparent: true
+          headerTransparent: true,
         }}
       />
     </Stack.Navigator>
@@ -56,8 +60,10 @@ function SettingsStack(props) {
   return (
     <Stack.Navigator
       initialRouteName="Settings"
-      mode="card"
-      headerMode="screen"
+      screenOptions={{
+        mode: "card",
+        headerShown: "screen",
+      }}
     >
       <Stack.Screen
         name="Settings"
@@ -65,7 +71,7 @@ function SettingsStack(props) {
         options={{
           header: ({ navigation, scene }) => (
             <Header title="Settings" scene={scene} navigation={navigation} />
-          )
+          ),
         }}
       />
     </Stack.Navigator>
@@ -74,14 +80,19 @@ function SettingsStack(props) {
 
 function ComponentsStack(props) {
   return (
-    <Stack.Navigator mode="card" headerMode="screen">
+    <Stack.Navigator
+      screenOptions={{
+        mode: "card",
+        headerShown: "screen",
+      }}
+    >
       <Stack.Screen
         name="Components"
         component={ComponentsScreen}
         options={{
           header: ({ navigation, scene }) => (
             <Header title="Components" scene={scene} navigation={navigation} />
-          )
+          ),
         }}
       />
     </Stack.Navigator>
@@ -90,30 +101,42 @@ function ComponentsStack(props) {
 
 function HomeStack(props) {
   return (
-    <Stack.Navigator mode="card" headerMode="screen">
-      <Stack.Screen 
+    <Stack.Navigator
+      screenOptions={{
+        mode: "card",
+        headerShown: "screen",
+      }}
+    >
+      <Stack.Screen
         name="Home"
         component={HomeScreen}
         options={{
           header: ({ navigation, scene }) => (
-            <Header 
+            <Header
               search
               tabs
               title="Home"
               navigation={navigation}
               scene={scene}
             />
-          )
+          ),
         }}
       />
-      <Stack.Screen 
+      <Stack.Screen
         name="Pro"
         component={ProScreen}
         options={{
           header: ({ navigation, scene }) => (
-            <Header back white transparent title="" navigation={navigation} scene={scene} />
+            <Header
+              back
+              white
+              transparent
+              title=""
+              navigation={navigation}
+              scene={scene}
+            />
           ),
-          headerTransparent: true
+          headerTransparent: true,
         }}
       />
     </Stack.Navigator>
@@ -124,12 +147,12 @@ function AppStack(props) {
   return (
     <Drawer.Navigator
       style={{ flex: 1 }}
-      drawerContent={props => (
+      drawerContent={(props) => (
         <CustomDrawerContent {...props} profile={profile} />
       )}
       drawerStyle={{
         backgroundColor: "white",
-        width: width * 0.8
+        width: width * 0.8,
       }}
       drawerContentOptions={{
         activeTintColor: "white",
@@ -143,12 +166,12 @@ function AppStack(props) {
           justifyContent: "center",
           alignContent: "center",
           // alignItems: 'center',
-          overflow: "hidden"
+          overflow: "hidden",
         },
         labelStyle: {
           fontSize: 18,
-          fontWeight: "normal"
-        }
+          fontWeight: "normal",
+        },
       }}
       initialRouteName="Home"
     >
@@ -163,7 +186,7 @@ function AppStack(props) {
               family="GalioExtra"
               color={focused ? "white" : materialTheme.COLORS.MUTED}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -178,7 +201,7 @@ function AppStack(props) {
               color={focused ? "white" : materialTheme.COLORS.MUTED}
               style={{ marginLeft: 4, marginRight: 4 }}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -192,7 +215,7 @@ function AppStack(props) {
               family="entypo"
               color={focused ? "white" : materialTheme.COLORS.MUTED}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -206,7 +229,7 @@ function AppStack(props) {
               family="GalioExtra"
               color={focused ? "white" : materialTheme.COLORS.MUTED}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -220,7 +243,7 @@ function AppStack(props) {
               family="material"
               color={focused ? "white" : materialTheme.COLORS.MUTED}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -234,7 +257,7 @@ function AppStack(props) {
               family="GalioExtra"
               color={focused ? "white" : materialTheme.COLORS.MUTED}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -249,7 +272,7 @@ function AppStack(props) {
               color={focused ? "white" : materialTheme.COLORS.MUTED}
               style={{ marginRight: -3 }}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -264,7 +287,7 @@ function AppStack(props) {
               color={focused ? "white" : materialTheme.COLORS.MUTED}
               style={{ marginRight: 2, marginLeft: 2 }}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -278,7 +301,7 @@ function AppStack(props) {
               family="ionicon"
               color={focused ? "white" : materialTheme.COLORS.MUTED}
             />
-          )
+          ),
         }}
       />
       <Drawer.Screen
@@ -292,7 +315,7 @@ function AppStack(props) {
               family="ionicon"
               color={focused ? "white" : materialTheme.COLORS.MUTED}
             />
-          )
+          ),
         }}
       />
     </Drawer.Navigator>
@@ -301,12 +324,17 @@ function AppStack(props) {
 
 export default function OnboardingStack(props) {
   return (
-    <Stack.Navigator mode="card" headerMode="none">
+    <Stack.Navigator
+      screenOptions={{
+        mode: "card",
+        headerShown: false,
+      }}
+    >
       <Stack.Screen
         name="Onboarding"
         component={OnboardingScreen}
         option={{
-          headerTransparent: true
+          headerTransparent: true,
         }}
       />
       <Stack.Screen name="App" component={AppStack} />
