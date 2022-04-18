@@ -1,3 +1,11 @@
+## [1.9.0] 2022 - 04 - 18
+### Updated dependencies
+- dependencies updated
+- `expo` module core added 
+- `stackNavigator` and `drawerNavigation` changes ( color scheme set ) 
+- `expo` updated
+- syntax update in `header Shown`
+
 ## [1.8.0] 2021 - 03 - 04
 ### Updated dependencies
 - updated `expo-asset@8.2.0` to `expo-asset@8.2.1`
