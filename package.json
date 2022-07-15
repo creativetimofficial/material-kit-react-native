@@ -15,30 +15,30 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@react-native-masked-view/masked-view": "0.2.4",
+    "@react-native-masked-view/masked-view": "0.2.6",
     "@react-navigation/compat": "^5.1.25",
     "@react-navigation/drawer": "6.4.1",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/stack": "^6.2.1",
-    "expo": "^42.0.0",
-    "expo-app-loading": "1.1.2",
-    "expo-asset": "~8.3.2",
-    "expo-font": "~9.2.1",
-    "expo-linear-gradient": "~9.2.0",
+    "expo": "^45.0.0",
+    "expo-app-loading": "~2.0.0",
+    "expo-asset": "~8.5.0",
+    "expo-font": "~10.1.0",
+    "expo-linear-gradient": "~11.3.0",
     "galio-framework": "^0.8.0",
-    "react": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-gesture-handler": "^1.10.3",
+    "react": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-gesture-handler": "~2.2.1",
     "react-native-modal-dropdown": "git+https://github.com/siemiatj/react-native-modal-dropdown.git",
-    "react-native-reanimated": "~2.2.0",
-    "react-native-safe-area-context": "3.2.0",
-    "react-native-screens": "~3.4.0"
+    "react-native-reanimated": "~2.8.0",
+    "react-native-safe-area-context": "4.2.4",
+    "react-native-screens": "~3.11.1"
   },
   "devDependencies": {
-    "babel-preset-expo": "8.3.0",
+    "babel-preset-expo": "~9.1.0",
     "cross-env": "~7.0.0",
     "expo-cli": "~3.11.7",
-    "jest-expo": "^40.0.0"
+    "jest-expo": "^45.0.0"
   },
   "bugs": {
     "url": "https://github.com/creativetimofficial/material-kit-react-native/issues"

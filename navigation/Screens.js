@@ -179,6 +179,7 @@ function AppStack(props) {
         name="Home"
         component={HomeStack}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -193,6 +194,7 @@ function AppStack(props) {
         name="Woman"
         component={ProScreen}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -208,6 +210,7 @@ function AppStack(props) {
         name="Man"
         component={ProScreen}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -222,6 +225,7 @@ function AppStack(props) {
         name="Kids"
         component={ProScreen}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -236,6 +240,7 @@ function AppStack(props) {
         name="New Collection"
         component={ProScreen}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -250,6 +255,7 @@ function AppStack(props) {
         name="Profile"
         component={ProfileStack}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -264,6 +270,7 @@ function AppStack(props) {
         name="Settings"
         component={SettingsStack}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -279,6 +286,7 @@ function AppStack(props) {
         name="Components"
         component={ComponentsStack}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -294,6 +302,7 @@ function AppStack(props) {
         name="Sign In"
         component={ProScreen}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
@@ -308,6 +317,7 @@ function AppStack(props) {
         name="Sign Up"
         component={ProScreen}
         options={{
+          headerShown: false,
           drawerIcon: ({ focused }) => (
             <Icon
               size={16}
