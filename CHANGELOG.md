@@ -1,4 +1,10 @@
-## [1.10.0] 2022 - 04 - 18
+## [1.10.0] 2022 - 08 - 01
+- dependencies updated
+- expo version updated
+- react native version updated
+- implement expo-splash-screen for splash loading
+
+
 ## [1.9.0] 2022 - 04 - 18
 ### Updated dependencies
 - dependencies updated
