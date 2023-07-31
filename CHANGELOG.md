@@ -1,3 +1,4 @@
+## [1.10.0] 2022 - 04 - 18
 ## [1.9.0] 2022 - 04 - 18
 ### Updated dependencies
 - dependencies updated
